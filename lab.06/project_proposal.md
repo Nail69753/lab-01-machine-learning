@@ -1,35 +1,54 @@
 # Individual Project Proposal
 
-**Project Title:** Car Brand and Model Recognition Using Deep Learning
-
+**Project Title:** Car Brand and Model Recognition Using Deep Learning  
 **Student Name:** Nail Murghuzlu  
-**Student ID:** 69753  
-**Course Assignment:** Lab 6 — Task 8
+**Student ID:** 69753
 
-### 1. Problem Statement
-The goal of this project is to develop a deep learning system that automatically identifies a car's brand and model from an image. The system will use image classification to distinguish between different vehicle models and provide predictions efficiently.
+## 1. Problem
 
-### 2. Dataset
-The project will use the **Stanford Cars Dataset**, which contains 16,185 images across 196 car categories. The images include different vehicle makes, models, and production years. The dataset will be divided into training and testing sets, with image preprocessing and data augmentation applied during training.
+In this project, I want to create an AI model that can recognize the brand and model of a car from a picture. Some cars look very similar, so identifying the correct model is not always easy. I will use deep learning to solve this problem.
 
-### 3. Success Metrics
-The primary evaluation metric will be classification accuracy on the test dataset. The initial target is **at least 80% test accuracy**. Model size and inference latency will also be measured to evaluate deployment suitability.
+The main idea is to build a model that gives good predictions but does not require too much memory or processing power.
 
-### 4. Deployment Constraints
-The optimized model must satisfy the following requirements:
+## 2. Dataset
 
-- **Inference latency:** ≤ 50 milliseconds per image
-- **Model size:** ≤ 5 MB
+I plan to use the **Stanford Cars Dataset**. It contains 16,185 car images from 196 different categories.
 
-Performance will be evaluated on CPU hardware using a consistent input size and batch size of one.
+The pictures include different brands, models, and production years. Before training, I will resize the images and normalize their pixel values. I may also use data augmentation to improve the results.
 
-### 5. Planned Optimization
-The project will begin with a pretrained convolutional neural network adapted to car classification. Two optimization methods are planned:
+## 3. Model and Success Metric
 
-- **Knowledge distillation:** Transfer knowledge from a larger teacher model to a smaller student model.
-- **Quantization:** Reduce numerical precision to decrease model size and potentially improve inference speed.
+I will start with a pretrained CNN model, possibly MobileNetV3, and adapt it for car classification.
 
-The final model will be compared with the baseline in terms of accuracy, latency, and storage requirements.
+My target is to achieve **at least 80% test accuracy**. I will compare the predicted car categories with the correct labels to measure performance.
 
-### 6. Expected Outcome
-The expected outcome is a compact car recognition model that balances classification accuracy with efficient deployment. The project will document the trade-offs between prediction quality, model size, and inference speed.
+I will also check how fast the model works and how much storage it needs.
+
+## 4. Deployment Constraints
+
+The final model should be small enough to run on a normal computer without a powerful GPU.
+
+The requirements are:
+
+- **Inference latency:** 50 ms or less per image.
+- **Model size:** 5 MB or less.
+
+I will test the model on a CPU and measure its average prediction time.
+
+## 5. Planned Optimization
+
+I plan to use two optimization methods.
+
+**Knowledge distillation** will help train a smaller model using information from a larger model.
+
+**Quantization** will reduce the precision of model weights to make the model smaller and possibly faster.
+
+After optimization, I will compare the new model with the original one using accuracy, size, and latency.
+
+## 6. Expected Result
+
+I expect to develop a small car recognition model that can identify different vehicle brands and models with reasonable accuracy.
+
+The main challenge will be keeping good accuracy while reducing model size and prediction time.
+
+This project will help me understand how deep learning models can be optimized for practical applications.
