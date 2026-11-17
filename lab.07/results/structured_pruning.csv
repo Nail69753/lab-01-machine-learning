@@ -1,0 +1,4 @@
+filter_pruning_fraction,parameters,parameter_reduction_percent,test_accuracy
+0.1,745864,9.53,90.1
+0.25,615594,25.33,82.25
+0.5,409034,50.39,76.18

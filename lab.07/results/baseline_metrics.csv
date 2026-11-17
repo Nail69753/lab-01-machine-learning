@@ -1,0 +1,2 @@
+parameters,model_size_mb,inference_latency_ms,test_accuracy_percent,device
+824458,3.148,0.9792,91.03,cpu

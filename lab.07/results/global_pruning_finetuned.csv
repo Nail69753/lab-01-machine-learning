@@ -1,0 +1,7 @@
+target_sparsity,actual_sparsity,accuracy_before_finetuning,accuracy_after_finetuning
+0,0.0,91.03,92.09
+0.25,0.25,90.98,92.05
+0.5,0.5,90.93,92.08
+0.75,0.75,90.8,91.96
+0.9,0.9,82.62,91.59
+0.95,0.95,61.46,90.16

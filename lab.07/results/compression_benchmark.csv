@@ -1,0 +1,4 @@
+model,parameters,size_mb,cpu_latency_ms
+baseline,824458,3.1479,0.8262
+student_normal,105866,0.4067,0.5637
+student_distillation,105866,0.4067,0.5346
