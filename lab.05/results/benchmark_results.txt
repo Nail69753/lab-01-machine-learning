@@ -1,0 +1,19 @@
+LAB 5 - BENCHMARK RESULTS
+=========================
+
+Gradient verification:
+PyTorch max difference: 0.0000000000
+Numerical max difference: 0.0000000015
+
+Training benchmark (median of 5 runs):
+Custom engine: 1.403530 seconds
+PyTorch: 3.173218 seconds
+
+Eager vs JIT traced (median of 5 runs):
+Eager: 0.049966 seconds
+JIT traced: 0.042976 seconds
+Speedup: 1.16x
+
+Tensor contiguity benchmark:
+Contiguous: 0.036632 seconds
+Non-contiguous: 0.035700 seconds
