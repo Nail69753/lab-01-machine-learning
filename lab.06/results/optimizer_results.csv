@@ -1,0 +1,7 @@
+optimizer,scheduler,final_accuracy_percent,time_seconds
+Adam,StepLR,90.11,310.31
+Adam,CosineAnnealingLR,90.2,322.28
+Adam,ReduceLROnPlateau,90.35,311.47
+SGD+Momentum,StepLR,85.4,292.42
+SGD+Momentum,CosineAnnealingLR,85.36,289.59
+SGD+Momentum,ReduceLROnPlateau,86.96,300.31

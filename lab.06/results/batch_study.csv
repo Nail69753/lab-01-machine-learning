@@ -1,0 +1,6 @@
+batch_size,throughput_samples_per_second,peak_memory_mb,test_accuracy_percent
+32,1113.72,2.48,88.88
+64,1302.39,2.37,88.91
+128,1385.61,2.37,89.0
+256,1449.97,2.39,87.33
+512,1735.89,2.44,86.78

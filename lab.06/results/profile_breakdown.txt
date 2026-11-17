@@ -1,0 +1,7 @@
+LAB 6 - PROFILER TIME BREAKDOWN
+================================
+
+data_loading: 4549737.67 ms (99.49%)
+forward_pass: 8979.83 ms (0.20%)
+backward_pass: 11676.93 ms (0.26%)
+optimizer_step: 2844.85 ms (0.06%)

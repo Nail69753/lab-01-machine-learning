@@ -1,0 +1,28 @@
+
+# Lab 6 - Training Configuration
+
+experiment:
+  name: "lab6_cnn_training"
+
+training:
+  seed: 42
+  epochs: 10
+  batch_size: 64
+  learning_rate: 0.001
+  optimizer: "adam"
+  num_workers: 0
+
+model:
+  name: "CNN"
+  num_classes: 10
+
+data:
+  dataset: "FashionMNIST"
+  root: "./data"
+
+checkpoint:
+  directory: "lab.06/checkpoints"
+  save_every: 1
+
+results:
+  directory: "lab.06/results"

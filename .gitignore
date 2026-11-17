@@ -17,4 +17,8 @@ Thumbs.db
 
 # Temporary files
 *.log
-.pytest_cache/
+.pytest_cache/data/
+.venv/
+__pycache__/
+*.pyc
+lab.06/src/main_backup.py

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nailm/OneDrive/Desktop/repo/lab.06/mlruns/871439563220984972/efb8ae62285d4f43b40e3df72d82da72/artifacts
+end_time: 1794900097688
+entry_point_name: ''
+experiment_id: '871439563220984972'
+lifecycle_stage: active
+run_id: efb8ae62285d4f43b40e3df72d82da72
+run_name: cnn_training
+run_uuid: efb8ae62285d4f43b40e3df72d82da72
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1794900097396
+status: 3
+tags: []
+user_id: nailm
