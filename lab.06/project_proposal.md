@@ -1,44 +1,35 @@
 # Individual Project Proposal
 
-**Project Title:** Efficient Fashion Image Classification Using a Lightweight CNN
+**Project Title:** Car Brand and Model Recognition Using Deep Learning
 
-**Student Name:** [Your Full Name]  
-**Student ID:** [Your Student ID]
+**Student Name:** Nail Murghuzlu  
+**Student ID:** 69753  
+**Course Assignment:** Lab 6 — Task 8
 
-## 1. Problem Statement
+### 1. Problem Statement
+The goal of this project is to develop a deep learning system that automatically identifies a car's brand and model from an image. The system will use image classification to distinguish between different vehicle models and provide predictions efficiently.
 
-The goal of this project is to develop a lightweight deep learning model that accurately classifies clothing images while remaining suitable for deployment on resource-constrained devices. The project will investigate how model optimization affects classification accuracy, inference latency, and model size.
+### 2. Dataset
+The project will use the **Stanford Cars Dataset**, which contains 16,185 images across 196 car categories. The images include different vehicle makes, models, and production years. The dataset will be divided into training and testing sets, with image preprocessing and data augmentation applied during training.
 
-## 2. Dataset
+### 3. Success Metrics
+The primary evaluation metric will be classification accuracy on the test dataset. The initial target is **at least 80% test accuracy**. Model size and inference latency will also be measured to evaluate deployment suitability.
 
-The project will use **FashionMNIST**, which contains 60,000 training images and 10,000 test images across 10 clothing categories. Each image is grayscale with a resolution of 28 × 28 pixels.
+### 4. Deployment Constraints
+The optimized model must satisfy the following requirements:
 
-## 3. Model and Success Metrics
+- **Inference latency:** ≤ 50 milliseconds per image
+- **Model size:** ≤ 5 MB
 
-The baseline will be the CNN developed in Lab 3, which achieved approximately **89.49% test accuracy**.
+Performance will be evaluated on CPU hardware using a consistent input size and batch size of one.
 
-The project's targets are:
+### 5. Planned Optimization
+The project will begin with a pretrained convolutional neural network adapted to car classification. Two optimization methods are planned:
 
-- **Test accuracy:** At least 89%.
-- **Inference latency:** No more than 50 ms per image.
-- **Model size:** No more than 5 MB.
-
-Accuracy will be evaluated on the FashionMNIST test set. Inference latency and model size will be measured on the selected deployment environment.
-
-## 4. Deployment Constraints
-
-The final model should support CPU-based inference without requiring a dedicated GPU. It must satisfy the latency and model-size constraints while maintaining acceptable classification accuracy.
-
-## 5. Planned Optimization
-
-Three optimization techniques will be investigated:
-
+- **Knowledge distillation:** Transfer knowledge from a larger teacher model to a smaller student model.
 - **Quantization:** Reduce numerical precision to decrease model size and potentially improve inference speed.
-- **Pruning:** Remove less important model parameters to reduce computational complexity.
-- **Knowledge distillation:** Train a smaller student model using predictions from a larger teacher model.
 
-The optimized models will be compared against the baseline CNN using accuracy, latency, and model size.
+The final model will be compared with the baseline in terms of accuracy, latency, and storage requirements.
 
-## 6. Expected Outcome
-
-The expected result is a compact clothing-classification model that achieves competitive accuracy while meeting the deployment requirements. The project will document the trade-offs between predictive performance and computational efficiency.
+### 6. Expected Outcome
+The expected outcome is a compact car recognition model that balances classification accuracy with efficient deployment. The project will document the trade-offs between prediction quality, model size, and inference speed.
