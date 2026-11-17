@@ -1,0 +1,52 @@
+{
+    "dataset": "UCI Adult",
+    "total_rows": 48842,
+    "total_columns": 15,
+    "missing_expected_columns": [],
+    "column_types": {
+        "age": "int64",
+        "workclass": "category",
+        "fnlwgt": "int64",
+        "education": "category",
+        "education-num": "int64",
+        "marital-status": "category",
+        "occupation": "category",
+        "relationship": "category",
+        "race": "category",
+        "sex": "category",
+        "capital-gain": "int64",
+        "capital-loss": "int64",
+        "hours-per-week": "int64",
+        "native-country": "category",
+        "class": "category"
+    },
+    "missing_values": {
+        "age": 0,
+        "workclass": 2799,
+        "fnlwgt": 0,
+        "education": 0,
+        "education-num": 0,
+        "marital-status": 0,
+        "occupation": 2809,
+        "relationship": 0,
+        "race": 0,
+        "sex": 0,
+        "capital-gain": 0,
+        "capital-loss": 0,
+        "hours-per-week": 0,
+        "native-country": 857,
+        "class": 0
+    },
+    "range_violations": {
+        "age": 0,
+        "hours-per-week": 0,
+        "capital-gain": 0,
+        "capital-loss": 0
+    },
+    "exact_duplicate_rows": 52,
+    "training_duplicates_removed": 24,
+    "conflicting_label_groups": 5,
+    "conflicting_label_rows": 10,
+    "manual_audit_sample_size": 50,
+    "manual_audit_status": "COMPLETED"
+}
